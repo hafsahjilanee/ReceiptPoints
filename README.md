@@ -15,8 +15,7 @@ Before running the service, ensure you have the following installed:
 
 1. Clone the repository:
     ```bash
-    git clone <repository-url>
-    cd <repository-folder>
+    git clone https://github.com/hafsahjilanee/ReceiptPoints.git
     ```
 
 2. Build and start the service with Docker Compose:
@@ -45,19 +44,19 @@ Before running the service, ensure you have the following installed:
         "purchaseTime": "14:33",
         "items": [
           {
-            "shortDescription": "Gatorade",
+            "shortDescription": "Strawberry",
             "price": "2.25"
           },
           {
-            "shortDescription": "Gatorade",
+            "shortDescription": "Mango",
             "price": "2.25"
           },
           {
-            "shortDescription": "Gatorade",
+            "shortDescription": "Orange",
             "price": "2.25"
           },
           {
-            "shortDescription": "Gatorade",
+            "shortDescription": "Kiwi",
             "price": "2.25"
           }
         ],
