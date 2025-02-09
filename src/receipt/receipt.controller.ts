@@ -5,12 +5,12 @@ import { ReceiptService } from './receipt.service';
 export class ReceiptController {
   constructor(private readonly receiptService: ReceiptService) {}
 
-  @Post('process')
+  @Post()
   processReceipt(@Body() receipt: any) {
     return this.receiptService.processReceipt(receipt);
   }
 
-  @Get(':id/points')
+  @Get('points/:id')
   getPoints(@Param('id') id: string) {
     return this.receiptService.getPoints(id);
   }
