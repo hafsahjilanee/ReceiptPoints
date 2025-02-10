@@ -36,7 +36,7 @@ Before running the service, ensure you have the following installed:
 - **POST /receipts/process**: To process a new receipt and calculate points.
     - **Request Example**:
       ```bash
-      curl --location 'http://localhost:3000/receipts' \
+      curl --location 'http://localhost:3000/receipts/process' \
       --header 'Content-Type: application/json' \
       --data '{
         "retailer": "M&M Corner Market",
@@ -75,7 +75,7 @@ Before running the service, ensure you have the following installed:
 - **GET /receipts/points/:id**: Get points for a specific receipt by ID.
     - **Example**:
       ```bash
-      curl --location 'http://localhost:3000/receipts/points/0fa7b7ba-c87f-4073-b878-ecea0d30abcc'
+      curl --location 'http://localhost:3000/receipts/0fa7b7ba-c87f-4073-b878-ecea0d30abcc/points/'
       ```
     - **Response**:
       ```json
